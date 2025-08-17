@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 20px;
+}
+
+input, button {
+    padding: 5px;
+    margin: 3px 0;
+    width: 300px;
+}
+
+button {
+    width: auto;
+}
+
+h1, h2, h3 {
+    color: #333;
+}

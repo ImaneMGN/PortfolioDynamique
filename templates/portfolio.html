@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio {{ user.full_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Portfolio {{ user.full_name }}</h1>
+    <p><strong>E-mail :</strong> {{ user.email }}</p>
+    <p><strong>Phone :</strong> {{ user.phone }}</p>
+
+    <h2>Education :</h2>
+    <ul>
+    {% for edu in user.education %}
+        <li>{{ edu.institution }} - {{ edu.major }} ({{ edu.period }})</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Skills :</h2>
+    <ul>
+    {% for skill in user.skills %}
+        <li>{{ skill }}</li>
+    {% endfor %}
+    </ul>
+
+    <h2>Projects :</h2>
+    <ul>
+    {% for proj in user.projects %}
+        <li>
+            <strong>{{ proj.title }}</strong><br />
+            {{ proj.description }}<br />
+            <a href="{{ proj.link }}" target="_blank">Link</a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

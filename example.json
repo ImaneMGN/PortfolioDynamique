@@ -1,0 +1,28 @@
+[
+  {
+    "full_name": "أسماء محمد",
+    "email": "asma.mohamed@example.com",
+    "phone": "0555123456",
+    "education": [
+      {"institution": "جامعة الجزائر", "major": "علوم الحاسوب", "period": "2018-2022"},
+      {"institution": "معهد المعلوماتية", "major": "تطوير البرمجيات", "period": "2016-2018"}
+    ],
+    "skills": ["Python", "Flask", "MongoDB", "HTML/CSS/JS"],
+    "projects": [
+      {"title": "موقع بورتفوليو", "description": "موقع شخصي لعرض المشاريع", "link": "https://example.com/portfolio"},
+      {"title": "تطبيق إدارة المهام", "description": "تطبيق ويب لإدارة المهام اليومية", "link": "https://example.com/tasks"}
+    ]
+  },
+  {
+    "full_name": "محمد علي",
+    "email": "mohamed.ali@example.com",
+    "phone": "0555987654",
+    "education": [
+      {"institution": "جامعة وهران", "major": "نظم المعلومات", "period": "2017-2021"}
+    ],
+    "skills": ["JavaScript", "React", "Node.js", "MongoDB"],
+    "projects": [
+      {"title": "تطبيق متجر إلكتروني", "description": "متجر لبيع المنتجات عبر الإنترنت", "link": "https://example.com/store"}
+    ]
+  }
+]

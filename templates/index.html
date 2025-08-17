@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio dynamique</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form id="portfolioForm">
+        <label>Full name :</label><br />
+        <input type="text" name="full_name" required><br />
+
+        <label>E-mail :</label><br />
+        <input type="email" name="email" required><br />
+
+        <label>Phone :</label><br />
+        <input type="tel" name="phone" required><br />
+
+        <h3>Education :</h3>
+        <div id="educationList"></div>
+        <button type="button" id="addEducationBtn">Add Education</button>
+
+        <h3>Skills :</h3>
+        <div id="skillsList"></div>
+        <button type="button" id="addSkillBtn">Add Skill</button>
+
+        <h3>Projects :</h3>
+        <div id="projectsList"></div>
+        <button type="button" id="addProjectBtn">Add Project</button><br /><br />
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="/static/js/main.js"></script>
+<link rel="stylesheet" href="/static/css/style.css">
+
+
+</body>
+</html>
